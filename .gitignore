@@ -16,3 +16,10 @@ minitcp.iml
 .idea
 
 
+.idea/
+.mvn/
+mvnw
+mvnw.cmd
+pom.xml
+src/
+target/
