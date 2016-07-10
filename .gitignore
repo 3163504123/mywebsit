@@ -18,8 +18,3 @@ minitcp.iml
 
 .idea/
 .mvn/
-mvnw
-mvnw.cmd
-pom.xml
-src/
-target/

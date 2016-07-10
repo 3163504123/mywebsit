@@ -1,0 +1,23 @@
+body {
+    max-width: 1024px;
+    min-width: 450px;
+    margin: 0 auto;
+}
+
+.media-list img,iframe {
+    height: 90px;
+    width: 90px;
+    margin-left: 15px;
+}
+
+.media-body {
+    overflow: hidden;
+    /*    white-space: nowrap;*/
+    /*    text-overflow: clip;*/
+    min-height: 90px;
+    max-height: 90px;
+}
+.media-list a {
+    text-decoration: none;
+    color: #333;
+}
