@@ -60,7 +60,8 @@
                         <div class="media-list">
                             <div class="media" th:each="blog:${blogs}">
                                 <div class="pull-right">
-                                    <iframe th:src="${blog.getConverPlan()}" frameBorder="0" scrolling="no" />
+
+                                    <img th:src="${'http://img02.store.sogou.com/net/a/05/link?appid=100520091&amp;w=240&amp;h=120&amp;url=' + blog.getConverPlan()}" />
                                 </div>
                                 <div class="media-body">
                                     <a th:href="${blog.getSourceUrl()}">
@@ -85,7 +86,6 @@
         </div>
     </div>
 
-
     <!--<ul>
 
         <li th:each="blog:${blogs}">
@@ -99,7 +99,6 @@
     </ul>-->
 </div>
 </body>
-<script src="/static/js/common.js">
+<!--<script src="/static/js/common.js">-->
 
-</script>
 </html>

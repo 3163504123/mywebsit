@@ -38,7 +38,7 @@ public class BlogService {
         return blogDao.getBlogsByTs(ts, limit);
     }
 
-    @Scheduled(fixedRate = 3600000, initialDelay = 60000)
+    @Scheduled(fixedRate = 3600000, initialDelay = 6000)
     public void importSogouArticle() {
         logger.info("start schedule");
         List<String> hotArticleFromSogou = getHotArticleFromSogou();
@@ -56,10 +56,9 @@ public class BlogService {
 
     public List<String> getHotArticleFromSogou() {
         List<String> articles = new ArrayList<>();
-        for (int j = 1; j < 14; j++) {
             try {
                 Document parse = Jsoup.parse(
-                        new URL(String.format("http://weixin.sogou.com/pcindex/pc/pc_9/%d.html", j)), 2000);
+                        new URL("http://weixin.sogou.com/pcindex/pc/pc_9/pc_9.html"), 2000);
                 Elements src = parse.select("a[href^=\"http://mp.weixin.qq.com/s\"]");
                 List<String> urls = src.parallelStream().map(element -> {
                     String url = element.attr("href");
@@ -70,7 +69,6 @@ public class BlogService {
                 }
             } catch (Exception e) {
             }
-        }
         return articles;
     }
 
