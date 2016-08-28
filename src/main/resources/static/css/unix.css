@@ -8,13 +8,21 @@
 	padding-bottom: 30px;
 }
 .unix_main h1{
-	text-align: center;
-    overflow: hidden;
+    text-align: center;
     border-bottom: 1px solid #c6cede;
     padding-bottom: 20px;
     font-size: 16px;
     font-family: 'Microsoft YaHei';
     color: #0474c8 !important;
+}
+.utspan {
+    background-color: #fff;
+    border: 1px solid #c6cede;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.col-hint {
+    color: #ff4500 !important;
 }
 .unix_main .w80{
 	width:80%;

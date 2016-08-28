@@ -15,7 +15,7 @@
 <div class="container">
    <#include "../common/nav.ftl"/>
        <div class="unix_main">
-           <h1 class="mb20">Unix时间戳(Unix timestamp)</h1>
+           <h1 class="mb20 clear">现在的Unix时间戳(Unix timestamp)是：<span class="utspan col-hint" id="currentunixtime">1472381291</span></h1>
            <div class="w80">
                <div class="untime clear mb20">
                    <label class="fz14 col-blue02">Unix时间戳（Unix timestamp）</label>
@@ -50,12 +50,15 @@
 
            });
 
-
            btnUtc.on('click',function(){
                var _val = domUtc8.val().trim();
                if(_val.length == 0) return;
                resultUtc.val(moment(_val,"YYYY/MM/DD HH:mm:ss").format("X"));
            });
+
+           setInterval(function() {
+               $("#currentunixtime").html(Math.floor(new Date().getTime()/1000))
+           },1000)
 
 
        </script>
