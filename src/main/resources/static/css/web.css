@@ -1,0 +1,286 @@
+/* CSS Document */
+*{
+    -webkit-box-sizing:initial;
+    -moz-box-sizing: initial;
+    -ms-box-sizing: initial;
+    box-sizing: initial;
+}
+#header, #menu{
+	width: 100%;
+	min-width: 1200px;
+	background: #fff;
+	font-family: Microsoft Yahei;
+}
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  padding-top: 15px;
+  position: relative;
+}
+.header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    width: 250px;
+    height: 54px;
+    line-height: 50px;
+    text-align: center;
+}
+.header ul {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  width: 325px;
+}
+.header ul li a {
+  height: 32px;
+  line-height: 32px;
+}
+.index_login a {
+  color: #00b7ee;
+  font-size: 14px;
+  background: url(../img/loginbg.png) center center no-repeat;
+  text-align: center;
+  font-weight: lighter;
+  width:88px;
+}
+.index_reg a {
+  color: #00b7ee;
+  font-size: 14px;
+  width: 88px;
+  background: url(../img/regbg.png) center center no-repeat;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0px 30px 0px 15px;
+  color: #f19149;
+}
+#web_form {
+    position: absolute;
+    left: 330px;
+    top: 28px;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 20px;
+    background: #f1f1f1;
+    border-radius: 16px;
+}
+#web_form label {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  font-size: 14px;
+  color: #a3a3a3;
+  font-family: 'Microsoft Yahei';
+}
+#search {
+  height: 20px;
+  line-height: 20px;
+  width: 260px;
+  position: absolute;
+  left: 55px;
+  top: 6px;
+  border: 0 none;
+  font-family: 'microsoft yahei';
+  color: #999;
+  background: 0 none; 
+  font-size: 12px;
+}
+#find_btn {
+  position: absolute;
+  background: url(../img/search.png) no-repeat;
+  right: 10px;
+  top: 10;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+/*菜单*/
+#menu {
+  background: #009fe3;
+  position: relative;
+  z-index: 9;
+}
+.menu {
+  width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+}
+.menu li {
+  width: 299px;
+  border-left: 1px solid #0091d0;
+}
+.menu li.sel {
+  background: #008ed0;
+}
+.menu li:hover{
+	cursor:pointer;
+	background: #008ed0;
+}
+.menu li a {
+  text-align: center;
+  color: #fff;
+  height: 40px;
+  padding: 10px 0;
+  width:100%;
+}
+.menu li a strong {
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+  font-weight: lighter;
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  padding-bottom: 2px;
+}
+.menu li a span {
+  font-size: 13px;
+  font-family: 'Microsoft Yahei';
+  display: block;
+  height: 20px;
+  line-height: 20px;
+}
+/*内容*/
+.w1200{
+	width:1200px;
+	margin: 0 auto;
+}
+.mydata h2{
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+    padding: 20px 0 10px 0;
+    color: #5edaf9;
+}
+.mydata h2 span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "microsoft yahei";
+}
+.mydata h2 a {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5edaf9;
+}
+.mydata ul {
+    padding-bottom: 10px;
+}
+.mydata ul li {
+    width: 158px;
+    padding: 0 10px;
+    height: 178px;
+    margin-left: 24px;
+    border: 1px solid #e7e7e7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.mydata .dataDiv{
+    height: 90px;
+    padding: 10px;
+    text-align: center;
+}
+.mydata .dataDiv a {
+    display: block;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.mydata .dataDiv a:hover{
+	-o-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+.dataDes{
+    border-top: 1px solid #f5f5f5;
+    padding: 0 12px;
+}
+.dataDes .dataTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    height: 14px;
+    overflow: hidden;
+    padding: 13px 0 8px 0;
+}
+.dataDes p {
+    font-size: 12px;
+    color: #bbb;
+}
+/*文章*/
+.miniList{
+    padding: 30px 0 40px;
+}	
+.listDiv {
+    width: 570px;
+}
+.listDiv h3 {
+    font-size: 18px;
+    color: #dfb57c;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.listDiv span {
+    font-size: 14px;
+}
+.listDiv h3 a {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #dfb57c;
+}
+.listDiv ul {
+    padding-top: 20px;
+}
+.listDiv li .art-img{
+	width:170px;
+	height:128px;
+	border-radius: 5px;
+}
+.listDiv li .art-img img{
+	width:100%;
+	height:100%;
+}
+.listDiv li .art-txt{
+	width: 390px;
+	padding-left:10px;
+}
+.listDiv li .art-txt h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #424242;
+}
+.listDiv li .art-txt h4 a{
+	color:#424242
+}
+.listDiv .art-ft{
+	font-size: 12px;
+    color: #a1a5b0;
+    margin-top:80px;
+}
+.listDiv .art-ft span{
+	font-size:12px;
+	padding-left:15px;
+}
+.listDiv .art-ft .readNum{
+	background:url(../img/mb-yuedu.png) no-repeat 0;
+    background-size: 12px 10px;
+	margin-right:15px;
+}
+.listDiv .art-ft .zanNum{
+	background:url(../img/mb-zanweixin.png) no-repeat 0;
+    background-size: 10px 10px;
+}

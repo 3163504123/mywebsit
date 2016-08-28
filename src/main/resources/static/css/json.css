@@ -1,0 +1,88 @@
+@charset "utf-8";
+.HeadersRow{
+	box-shadow: 0px 0px 1px #e5e5e5;
+    border-bottom: solid 1px #d5d5d5;
+    padding: 0px;
+}
+.HeadersRow h1{
+	text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0fd59d;
+    padding: 10px;
+}
+.main-json{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width:100%;
+}
+.main-json .txt-wrapper{
+	width:35%;
+}
+.main-json .rt-cont{
+	width:65%;
+}
+.txt-wrapper textarea{
+	display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	height: 553px;
+    padding: 0 10px 10px 20px;
+    border: 0;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#ControlsRow{
+	padding: 5px;
+    font-size: 16px;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+}
+#ControlsRow div{
+    margin-right:10px;
+}
+#ControlsRow select{
+	font-size:14px;
+}
+#CollapsibleViewDetail a{
+	color: blue;
+	padding: 0px 5px;
+}
+#ControlsRow .btn-json{
+	color: #fff;
+    padding: 10px 17px;
+    font-size: 14px;
+    background: #0fd59d;
+    font-weight: 600;
+    cursor: pointer;
+}
+#right-box{
+	height: 505px;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    border-radius: 0;
+    resize: none;
+    overflow-y: auto;
+    outline: none;
+    position: relative;
+}
+#right-box .Canvas{
+	padding: 0px 25px;
+	font-size:14px;
+}

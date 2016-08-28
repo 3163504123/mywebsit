@@ -3,6 +3,7 @@ package com.zs.minitcp.dao.impl;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Sorts;
 import com.zs.minitcp.dao.BlogDao;
 import com.zs.minitcp.model.Blog;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -26,7 +27,7 @@ public class BlogMongoDao extends MongoDaoBase implements BlogDao {
 
     @Override
     public List<Blog> getBlogsByTs(long st, int limit) {
-        FindIterable<Document> postTime = cBlog.find(Filters.lt("postTime", st)).limit(limit);
+        FindIterable<Document> postTime = cBlog.find(Filters.lt("postTime", st)).sort(Sorts.descending("postTime")).limit(limit);
         List<Blog> blogs = new LinkedList<>();
         for (Document document : postTime) {
             blogs.add(toObject(document,Blog.class));

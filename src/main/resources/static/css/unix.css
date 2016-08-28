@@ -1,0 +1,87 @@
+.unix_main{
+	max-width: 1210px;
+	margin: 20px auto;
+	font-size: 13px;
+	color: #333;
+	background-color: #f3f5f9;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.unix_main h1{
+	text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #c6cede;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    color: #0474c8 !important;
+}
+.unix_main .w80{
+	width:80%;
+	margin: 0 auto;
+}
+.untime label,.untime input{
+	display: inline-block;
+	float: left;
+}
+.untime label {
+    text-align: right;
+    width: 260px;
+    padding-right: 10px;
+    line-height: 30px;
+}
+.untime .InputTxt {
+    border: 1px solid #c6cede;
+    background-color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+}
+.untime .InputBtnC {
+    border: 1px solid #c6cede;
+    background-color: #fff;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.untime .InputBtnC:hover{ 
+	text-decoration:none; 
+	background-color:#f1f9ff;
+}
+.plr5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pr15 {
+    padding-right: 15px;
+}	
+.pl5 {
+    padding-left: 5px;
+}		
+.lh30 {
+    line-height: 30px;
+}
+.w140 {
+    width: 140px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.plr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-blue02 {
+    color: #0474c8 !important;
+}
+.fz14 {
+    font-size: 14px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+		

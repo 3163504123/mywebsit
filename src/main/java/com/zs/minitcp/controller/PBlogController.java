@@ -31,11 +31,11 @@ public class PBlogController extends BaseController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String homepage(Model model) {
-        List<Blog> blogs = blogService.getBlogs(System.currentTimeMillis(), 10);
+        List<Blog> blogs = blogService.getBlogs(System.currentTimeMillis(), 5);
         if (blogs != null) {
             model.addAttribute("blogs",blogs);
         }
-        return "blogs";
+        return "index";
     }
 
     @RequestMapping(value = "/blog/{blogId}", method = RequestMethod.GET)
