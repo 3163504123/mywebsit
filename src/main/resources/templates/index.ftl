@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="blogs" type="com.zs.minitcp.model.Blog[]" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
